@@ -1,0 +1,106 @@
+Here is one that Richard sent me:
+
+I found that it was difficult to remember details very quickly after the
+exams, and so I found it hard to put protocols together. What I did find in
+the MI exam was that most of the detailed derivations were unnecessary to
+get too bogged down in, he's more interested in whether you know when/how to
+apply things, and a basic understanding of stuff (I got asked about SVMs a
+bit; like if it's a C-SVM, which of a bunch of points he draws around the
+boundary are the support vectors, that sort of thing, and an explanation of
+why VC-dimension is relevant and so on). So, you'd need to know formulae and
+some basic derivations, but any long derivation is unnecessary to know (at
+least, that was my experience)...
+
+Jonas:
+
+
+It's been a while so I don't remember exactly but as Richie said detailed derivation are not necessary, 
+however he usually wants to know where you start off (e.g. PCA: find direction of highest variance) and where you end up 
+(eigenvalue decomposition) and that you can formalize it. How you get there is usually not important. 
+He asked me also about the Dvc Dimension (i just gave him the definition from the script and the example), 
+mean Field Annealing, MLPs and RBF networks, SVMs and he wanted quite some details on the mercers theorem. 
+Anyway its quite fair and it doesn't matter if you have little errors in your equations but you should know them roughly 
+at least.
+
+Jan:
+My exam was done by Timm Lochmann and Wendelin Böhmer because Prof. Obermayer got ill for several weeks. 
+Although, Wendelin was just “Beisitzer” he asked many questions which could be quite deep as he knows 
+impressively much about the topic. He also wanted to know stuff we only did in the tutorial even though 
+Timm said in an email that stuff from the tutorials will not be asked explicitly. Moreover, they were quite often 
+switching topics from MI 1 and MI 2. So here are the topics they asked me about (without guarantee of completeness):
+What are probabilities? What is a PDF?
+Connectionist Neurons
+Multilayer Perceptron, Backpropagation
+PCA
+Kernel trick (including Mercer’s theorem)
+Different error functions, what is their influence on the weights?
+Regularization? What regularizer leads to sparse weights?
+Why are large weights w a sign of a complex model and overfitting?
+Validation methods: Test-set and cross validation. When do you use which method?
+Probability density estimation with kernels (histogram and Gaussian). How do you validate this?
+What can you do to prevent overfitting? Regularization! What else? More data, reduce model complexity. 
+They wanted to a third thing, I already have forgotten again except that it was IMO equivalent to regularization.
+Graphical models for Inference: It was in the last minutes and they could only draw a DAG 
+and let me write how to calculate probabilities in it and do marginalization.
+Conditional independence
+Surprisingly, they left out important topics like RBF, SVM, ICA, Stochastic Optimization and Clustering. 
+They focused quite much on this error function/regularization/model complexity/validation stuff.
+
+Stephan
+
+I also had the exam with Timm and Wendelin. In the beginning mostly Wendelin asked and he also really goes into details. 
+Not during a derivation of a method, it is still more important that you got the concepts, 
+but he also points you to missing indeces or other small mistakes when you write a formula. 
+I don't remember the order of the questions, but I remember that it made sense. 
+They moved from one topic to another. Ah, in the end they said that they liked my "active participation". 
+A few times I told them I have no idea what they mean, so they could give me a hint. 
+They liked that. It was a very relaxed atmosphere in general.
+
+what is a probability, a density, etc
+kernel density estimate
+parametric density estimate (maximum likelihood)
+estimators in general, CR-bound
+detailed derivation of PCA
+kernel PCA and potential problems (hard to choose the "right" kernel and no meaning of the variance in the feature space)
+derivation of ICA
+derivation of SVM, why SVM (results of SLT), what to do in case of overlapping classes --> kernel trick, C-SVM
+validation methods
+
+
+Katha
+(11.10.2012)
+Again, Timm and Wendelin asked me questions. I felt like they really asked a lot of different things
+ and wanted understanding of concepts, but also to-the-point algorithms and formulas. 
+As mentioned before, they appreciate correct indices and stuff. They didn't go too much into detail,
+ though, only for the basic things you need to know the formulas. They were generally very nice and
+ told me in the end that although I hadn't answered everything correctly at first and they had to help a bit
+ on a few points, I made up for that with additional stuff that they hadn't expected me to know or to have understood.
+What is a probability, what is a probability density?
+Non-parametric methods to approximate them?
+How do validate the approximation?
+Regression with MLP: Principal regression problem, how the MLP does it
+error function, gradient, backprop
+Regularization: Why, what kinds, why use L2-norm regularization
+PCA: what is it good for, derive the eigenvalue problem (write down how to calculate covariance matrix, Lagrangian,
+ eigenvalue problem, no intermediate steps)
+properties of the cov matrix (symmtric, pos semidefinite)
+kernel trick
+SVMs - What's different from MLP (SRM instead of ERM), why do SRM (complexity, margin, VC-dimension), why use C-SVM
+K-means clustering (description of algorithm, write down cost function, how to determine number of clusters)
+
+Ivana
+(05.07.2013)
+My exam was with Oby and Timm was just writing the protocol. When asking questions, Oby was switching between MI1 and MI2
+and sometimes I had problem to understand his questions. In that case, I asked him to rephrase the question 
+or I just answered what I thought he asked, and then he would continue with questions. 
+All in all, he is a nice examiner; he gives a lot of hints and doesn't care much about the long complicated derivations 
+in the script, make sure to elaborate everything you write on the paper.
+Probability density estimation, parametric/non-parametric, how to validate, a lot about ML estimation 
+(this text here summarizes answers: http://www.itl.nist.gov/div898/handbook/eda/section3/eda3652.htm)
+RBF
+SVM, objectives, conditions, C-SVM
+Kernel trick, Mercer's theorem
+Source separation techniques, Infomax, Matrix diagonalization
+K-means, how to estimate number of clusters
+Bayesian prediction and selection
+Regularization and cost function, why squared
